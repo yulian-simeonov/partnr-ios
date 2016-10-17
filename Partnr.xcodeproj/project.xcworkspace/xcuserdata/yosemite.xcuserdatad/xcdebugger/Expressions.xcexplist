@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "RootViewController.viewDidLoad() -&gt; ():RootViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "SharedDataManager.sharedInstance.userName">
+            </PersistentString>
+            <PersistentString
+               value = "SharedDataManager.sharedInstance.password">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SignupStepViewController.(onClickLocationYes(SignupStepViewController) -&gt; (AnyObject) -&gt; ()).(closure #1):SignupStepViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "placeMark.locality">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

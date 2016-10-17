@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="51" id="PAT-DY-iQe" customClass="FriendTableCell" customModule="Partnr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PAT-DY-iQe" id="fMe-n6-svG">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hE-Hf-MZa" customClass="PNRoundedShadowView" customModule="Partnr" customModuleProvider="target">
+                        <rect key="frame" x="8" y="0.0" width="359" height="51"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vtn-Kq-l6S" customClass="NSLoadingButton">
+                                <rect key="frame" x="271" y="13" width="80" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="bzo-Dg-ODs"/>
+                                    <constraint firstAttribute="width" constant="80" id="gY7-ua-B5r"/>
+                                </constraints>
+                                <state key="normal" image="btn-ask"/>
+                                <state key="selected" image="btn-sent"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar-empty" translatesAutoresizingMaskIntoConstraints="NO" id="v5e-AD-H2s">
+                                <rect key="frame" x="0.0" y="0.0" width="51" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="PiQ-LB-dFH"/>
+                                    <constraint firstAttribute="height" constant="51" id="mmu-Gq-k55"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amanda Sabreah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ic-sX-Xb2">
+                                <rect key="frame" x="58" y="16" width="205" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="bHg-Rs-HoJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Vtn-Kq-l6S" secondAttribute="trailing" constant="8" id="87w-Pn-0RR"/>
+                            <constraint firstItem="0ic-sX-Xb2" firstAttribute="leading" secondItem="v5e-AD-H2s" secondAttribute="trailing" constant="7" id="H9c-6h-cgz"/>
+                            <constraint firstAttribute="height" constant="51" id="KC5-hM-hRE"/>
+                            <constraint firstItem="Vtn-Kq-l6S" firstAttribute="leading" secondItem="0ic-sX-Xb2" secondAttribute="trailing" constant="8" id="Law-iy-GXi"/>
+                            <constraint firstItem="Vtn-Kq-l6S" firstAttribute="centerY" secondItem="1hE-Hf-MZa" secondAttribute="centerY" id="Pah-gs-aaY"/>
+                            <constraint firstItem="0ic-sX-Xb2" firstAttribute="centerY" secondItem="1hE-Hf-MZa" secondAttribute="centerY" id="qcP-CD-4aF"/>
+                            <constraint firstItem="v5e-AD-H2s" firstAttribute="centerY" secondItem="1hE-Hf-MZa" secondAttribute="centerY" id="whm-Z8-d8q"/>
+                            <constraint firstItem="v5e-AD-H2s" firstAttribute="leading" secondItem="1hE-Hf-MZa" secondAttribute="leading" id="y9H-gl-afG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="1hE-Hf-MZa" secondAttribute="trailing" constant="8" id="0T3-pc-Trh"/>
+                    <constraint firstItem="1hE-Hf-MZa" firstAttribute="leading" secondItem="fMe-n6-svG" secondAttribute="leading" constant="8" id="5Qf-t1-oh3"/>
+                    <constraint firstAttribute="bottom" secondItem="1hE-Hf-MZa" secondAttribute="bottom" constant="3" id="H3J-8D-Y5K"/>
+                    <constraint firstItem="1hE-Hf-MZa" firstAttribute="top" secondItem="fMe-n6-svG" secondAttribute="top" constant="2" id="Xx2-hP-to6"/>
+                    <constraint firstItem="1hE-Hf-MZa" firstAttribute="centerY" secondItem="fMe-n6-svG" secondAttribute="centerY" id="vLK-G3-ny8"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="H3J-8D-Y5K"/>
+                        <exclude reference="Xx2-hP-to6"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="actionButton" destination="Vtn-Kq-l6S" id="bNt-25-Kdv"/>
+                <outlet property="avatarImage" destination="v5e-AD-H2s" id="lNl-us-ZTm"/>
+                <outlet property="nameLabel" destination="0ic-sX-Xb2" id="qII-Ue-AbO"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar-empty" width="50" height="50"/>
+        <image name="btn-ask" width="79" height="26"/>
+        <image name="btn-sent" width="79" height="26"/>
+    </resources>
+</document>

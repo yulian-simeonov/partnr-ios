@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModalDialogViewController">
+            <connections>
+                <outlet property="confirmDescLabel" destination="eIH-9L-Sd2" id="p71-G1-mX5"/>
+                <outlet property="view" destination="tNx-JU-9jC" id="Txy-AZ-0L0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tNx-JU-9jC">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.85000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIE-sS-IkD">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUc-C3-rkL" customClass="PNRoundedShadowView" customModule="Partnr" customModuleProvider="target">
+                    <rect key="frame" x="10" y="178" width="300" height="132"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to Partnr with Amanda Sabreah?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIH-9L-Sd2">
+                            <rect key="frame" x="8" y="8" width="284" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="SQp-WC-YHW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <color key="textColor" red="0.25001972849999998" green="0.25001972849999998" blue="0.25001972849999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cco-i3-SET">
+                            <rect key="frame" x="152" y="77" width="140" height="47"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="47" id="ZcQ-AL-rqp"/>
+                                <constraint firstAttribute="width" constant="140" id="a00-eN-Ks5"/>
+                            </constraints>
+                            <state key="normal" image="btn-yes-confirm"/>
+                            <connections>
+                                <action selector="onClickYes:" destination="-1" eventType="touchUpInside" id="0Eq-rm-7i6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATK-0e-wBy">
+                            <rect key="frame" x="8" y="77" width="140" height="47"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="47" id="89b-85-K53"/>
+                                <constraint firstAttribute="width" constant="140" id="hHK-w3-bxx"/>
+                            </constraints>
+                            <state key="normal" image="btn-no-confirm"/>
+                            <connections>
+                                <action selector="onClickNo:" destination="-1" eventType="touchUpInside" id="Gol-xh-QLb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="132" id="1nC-qu-yOd"/>
+                        <constraint firstItem="eIH-9L-Sd2" firstAttribute="leading" secondItem="LUc-C3-rkL" secondAttribute="leading" constant="8" id="3Kw-G3-YPI"/>
+                        <constraint firstAttribute="trailing" secondItem="eIH-9L-Sd2" secondAttribute="trailing" constant="8" id="AD8-DL-OQN"/>
+                        <constraint firstItem="eIH-9L-Sd2" firstAttribute="top" secondItem="LUc-C3-rkL" secondAttribute="top" constant="8" id="B3Y-0q-dUI"/>
+                        <constraint firstAttribute="bottom" secondItem="ATK-0e-wBy" secondAttribute="bottom" constant="8" id="US9-uC-RCy"/>
+                        <constraint firstAttribute="bottom" secondItem="cco-i3-SET" secondAttribute="bottom" constant="8" id="bLE-79-RGY"/>
+                        <constraint firstItem="ATK-0e-wBy" firstAttribute="leading" secondItem="LUc-C3-rkL" secondAttribute="leading" constant="8" id="ePM-VD-f7Q"/>
+                        <constraint firstAttribute="width" constant="300" id="ulV-DX-z1b"/>
+                        <constraint firstAttribute="trailing" secondItem="cco-i3-SET" secondAttribute="trailing" constant="8" id="zgl-3o-2rW"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WIE-sS-IkD" secondAttribute="trailing" id="JnN-Fr-c3R"/>
+                <constraint firstItem="LUc-C3-rkL" firstAttribute="centerY" secondItem="tNx-JU-9jC" secondAttribute="centerY" constant="-40" id="aIn-XX-fws"/>
+                <constraint firstItem="WIE-sS-IkD" firstAttribute="top" secondItem="tNx-JU-9jC" secondAttribute="top" id="atl-i3-p0E"/>
+                <constraint firstItem="LUc-C3-rkL" firstAttribute="centerX" secondItem="tNx-JU-9jC" secondAttribute="centerX" id="tpu-qw-4Cx"/>
+                <constraint firstAttribute="bottom" secondItem="WIE-sS-IkD" secondAttribute="bottom" id="uVd-YT-77G"/>
+                <constraint firstItem="WIE-sS-IkD" firstAttribute="leading" secondItem="tNx-JU-9jC" secondAttribute="leading" id="yKu-af-lhF"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="139" y="245"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn-no-confirm" width="140" height="47"/>
+        <image name="btn-yes-confirm" width="140" height="47"/>
+    </resources>
+</document>

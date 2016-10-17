@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" rowHeight="56" id="zzM-Af-rGV" customClass="UserTableCell" customModule="Partnr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zzM-Af-rGV" id="Wmy-Js-EvK">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="seF-pg-vPn" customClass="PNRoundedShadowView" customModule="Partnr" customModuleProvider="target">
+                        <rect key="frame" x="8" y="3" width="359" height="51"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffset">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VjI-Vf-yj6" customClass="PNRoundedShadowView" customModule="Partnr" customModuleProvider="target">
+                        <rect key="frame" x="8" y="3" width="359" height="51"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNy-uy-0Us" customClass="NSLoadingButton">
+                                <rect key="frame" x="252" y="13" width="99" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="qeO-B7-vli"/>
+                                    <constraint firstAttribute="height" constant="26" id="x6w-wm-YVV"/>
+                                </constraints>
+                                <state key="normal" image="btn-follow"/>
+                                <state key="selected" image="btn-following"/>
+                                <connections>
+                                    <action selector="onClickFollow:" destination="zzM-Af-rGV" eventType="touchUpInside" id="g8F-NM-BzD"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar-empty" translatesAutoresizingMaskIntoConstraints="NO" id="9D6-ov-rRS" customClass="PFImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="51" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="JXo-wI-rHj"/>
+                                    <constraint firstAttribute="height" constant="51" id="ktI-Lx-pBX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amanda Sabreah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SF-0T-0lW">
+                                <rect key="frame" x="58" y="8" width="186" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="cnT-3R-ZlI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@amanda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypZ-pM-VSz">
+                                <rect key="frame" x="58" y="24" width="186" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="Nt2-Wl-I5g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9D6-ov-rRS" firstAttribute="leading" secondItem="VjI-Vf-yj6" secondAttribute="leading" id="FoG-W1-7Zh"/>
+                            <constraint firstAttribute="trailing" secondItem="QNy-uy-0Us" secondAttribute="trailing" constant="8" id="HFd-PO-l9k"/>
+                            <constraint firstItem="QNy-uy-0Us" firstAttribute="leading" secondItem="4SF-0T-0lW" secondAttribute="trailing" constant="8" id="IKT-6T-SvP"/>
+                            <constraint firstItem="QNy-uy-0Us" firstAttribute="centerY" secondItem="VjI-Vf-yj6" secondAttribute="centerY" id="Lm5-cf-W4g"/>
+                            <constraint firstItem="4SF-0T-0lW" firstAttribute="centerY" secondItem="VjI-Vf-yj6" secondAttribute="centerY" constant="-8.5" id="Mhv-a2-Iwh"/>
+                            <constraint firstItem="9D6-ov-rRS" firstAttribute="centerY" secondItem="VjI-Vf-yj6" secondAttribute="centerY" id="MqX-6O-1I1"/>
+                            <constraint firstAttribute="height" constant="51" id="PAe-kt-Mb5"/>
+                            <constraint firstItem="QNy-uy-0Us" firstAttribute="leading" secondItem="ypZ-pM-VSz" secondAttribute="trailing" constant="8" id="aWl-OD-lnZ"/>
+                            <constraint firstItem="ypZ-pM-VSz" firstAttribute="centerY" secondItem="VjI-Vf-yj6" secondAttribute="centerY" constant="7.5" id="kby-Kv-v8T"/>
+                            <constraint firstItem="4SF-0T-0lW" firstAttribute="leading" secondItem="9D6-ov-rRS" secondAttribute="trailing" constant="7" id="nhg-Rh-VQm"/>
+                            <constraint firstItem="ypZ-pM-VSz" firstAttribute="leading" secondItem="9D6-ov-rRS" secondAttribute="trailing" constant="7" id="yJj-o0-g8A"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="seF-pg-vPn" firstAttribute="leading" secondItem="VjI-Vf-yj6" secondAttribute="leading" id="G9i-2j-CNe"/>
+                    <constraint firstItem="VjI-Vf-yj6" firstAttribute="leading" secondItem="Wmy-Js-EvK" secondAttribute="leading" constant="8" id="ThJ-3r-F1G"/>
+                    <constraint firstItem="seF-pg-vPn" firstAttribute="centerY" secondItem="VjI-Vf-yj6" secondAttribute="centerY" id="Yoo-XF-hWM"/>
+                    <constraint firstItem="VjI-Vf-yj6" firstAttribute="top" secondItem="Wmy-Js-EvK" secondAttribute="top" constant="2" id="Ypt-8B-reG"/>
+                    <constraint firstAttribute="trailing" secondItem="VjI-Vf-yj6" secondAttribute="trailing" constant="8" id="d7n-wY-3vA"/>
+                    <constraint firstItem="seF-pg-vPn" firstAttribute="trailing" secondItem="VjI-Vf-yj6" secondAttribute="trailing" id="e1X-iU-MDR"/>
+                    <constraint firstAttribute="bottom" secondItem="VjI-Vf-yj6" secondAttribute="bottom" constant="3" id="lME-1W-OI4"/>
+                    <constraint firstItem="seF-pg-vPn" firstAttribute="height" secondItem="VjI-Vf-yj6" secondAttribute="height" id="ljo-FO-oro"/>
+                    <constraint firstItem="VjI-Vf-yj6" firstAttribute="centerY" secondItem="Wmy-Js-EvK" secondAttribute="centerY" id="p6s-wT-XEY"/>
+                    <constraint firstItem="seF-pg-vPn" firstAttribute="width" secondItem="VjI-Vf-yj6" secondAttribute="width" id="th6-sf-3Ak"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Ypt-8B-reG"/>
+                        <exclude reference="lME-1W-OI4"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarImage" destination="9D6-ov-rRS" id="DFZ-jF-VE9"/>
+                <outlet property="containerView" destination="VjI-Vf-yj6" id="9Tc-tg-ilh"/>
+                <outlet property="followButton" destination="QNy-uy-0Us" id="KO4-FS-rBY"/>
+                <outlet property="nameLabel" destination="4SF-0T-0lW" id="NEu-0r-WRg"/>
+                <outlet property="usernameLabel" destination="ypZ-pM-VSz" id="l1h-HC-x5A"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar-empty" width="50" height="50"/>
+        <image name="btn-follow" width="99" height="26"/>
+        <image name="btn-following" width="99" height="26"/>
+    </resources>
+</document>

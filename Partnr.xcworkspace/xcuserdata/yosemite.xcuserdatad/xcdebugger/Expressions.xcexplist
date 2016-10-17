@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "NewsDetailViewController.(reloadCommentData(NewsDetailViewController) -&gt; () -&gt; ()).(closure #1):NewsDetailViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ProfileViewController.onClickEditProfile(AnyObject) -&gt; ():ProfileViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "APPDELGATE.locationTracker.myLastLocation">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NewsDetailViewController.tableView(UITableView, numberOfRowsInSection : Int) -&gt; Int:NewsDetailViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "KickAssViewController.(contacts.getter).(closure #1):KickAssViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "phone.value">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NewsDetailViewController.heightWithCellAtIndexPath(NSIndexPath) -&gt; CGFloat:NewsDetailViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "NewsfeedViewController.tableView(UITableView, cellForRowAtIndexPath : NSIndexPath) -&gt; UITableViewCell:NewsfeedViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "-[KILabel updateTextStoreWithText]:KILabel.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.attributedText">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.application(UIApplication, didReceiveLocalNotification : UILocalNotification) -&gt; ():AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "notification.userInfo">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static ProjectData.initWithParseObject(PFObject?) -&gt; ProjectData?:ProjectData.swift">
+      </ContextState>
+      <ContextState
+         contextName = "KickAssViewController.onClickInvite(UIButton) -&gt; ():KickAssViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "PNAPIClient.(feedAllProject(PNAPIClient) -&gt; ([Int], callback : (projects : NSArray, error : NSError?) -&gt; ()) -&gt; ()).(closure #1):PNAPIClient.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "resultArray[1]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NewsfeedViewController.(reloadAllProjects(NewsfeedViewController) -&gt; () -&gt; ()).(closure #1):NewsfeedViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "projects[1]">
+            </PersistentString>
+            <PersistentString
+               value = "self.projectsArray[1]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[KILabel updateTextStoreWithAttributedString:]:KILabel.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.linkRanges">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

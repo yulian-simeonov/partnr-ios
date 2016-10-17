@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EmptyFeedCell" rowHeight="392" id="een-vV-RoZ" customClass="FeedEmptyTableCell" customModule="Partnr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="392"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="een-vV-RoZ" id="7FX-Jo-cMi">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="391"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-emptyFeed" translatesAutoresizingMaskIntoConstraints="NO" id="Ku9-jw-dLp">
+                        <rect key="frame" x="16" y="17" width="343" height="357"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ku9-jw-dLp" secondAttribute="trailing" constant="8" id="Idr-e9-mxW"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ku9-jw-dLp" secondAttribute="bottom" constant="9" id="TT4-xu-oGp"/>
+                    <constraint firstItem="Ku9-jw-dLp" firstAttribute="leading" secondItem="7FX-Jo-cMi" secondAttribute="leadingMargin" constant="8" id="a4S-Ll-Qu6"/>
+                    <constraint firstItem="Ku9-jw-dLp" firstAttribute="top" secondItem="7FX-Jo-cMi" secondAttribute="topMargin" constant="9" id="uMK-ip-48B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="emptyImage" destination="Ku9-jw-dLp" id="npO-nY-zdL"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img-emptyFeed" width="294" height="216"/>
+    </resources>
+</document>
