@@ -2,7 +2,7 @@
 //  FeedBaseTableCell.swift
 //  Partnr
 //
-//  Created by Yosemite on 3/8/16.
+//  Created by Yulian Simeonov on 3/8/16.
 //  Copyright © 2016 YulianMobile. All rights reserved.
 //
 

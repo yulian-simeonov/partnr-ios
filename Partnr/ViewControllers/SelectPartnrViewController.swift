@@ -2,7 +2,7 @@
 //  SelectPartnrViewController.swift
 //  Partnr
 //
-//  Created by Yosemite on 5/31/16.
+//  Created by Yulian Simeonov on 5/31/16.
 //  Copyright © 2016 YulianMobile. All rights reserved.
 //
 

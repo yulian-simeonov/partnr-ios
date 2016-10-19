@@ -3,7 +3,7 @@
 //  Tapin
 //
 //  Created by Yurii.B on 11/20/14.
-//  Copyright (c) 2014 YuriiBogdan. All rights reserved.
+//  Copyright (c) 2014 YulianMobile. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -2,7 +2,7 @@
 //  ForgotPwdViewController.swift
 //  Partnr
 //
-//  Created by Yosemite on 2/21/16.
+//  Created by Yulian Simeonov on 2/21/16.
 //  Copyright © 2016 YulianMobile. All rights reserved.
 //
 

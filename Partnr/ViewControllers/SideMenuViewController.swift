@@ -2,8 +2,8 @@
 //  SideMenuViewController.swift
 //  NimbleSchedule
 //
-//  Created by Yosemite on 10/12/15.
-//  Copyright © 2015 YuriiBogdan. All rights reserved.
+//  Created by Yulian Simeonov on 10/12/15.
+//  Copyright © 2015 YulianMobile. All rights reserved.
 //
 
 import UIKit

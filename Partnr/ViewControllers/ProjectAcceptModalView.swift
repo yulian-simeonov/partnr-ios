@@ -2,7 +2,7 @@
 //  ProjectAcceptModalView.swift
 //  Partnr
 //
-//  Created by Yosemite on 3/2/16.
+//  Created by Yulian Simeonov on 3/2/16.
 //  Copyright © 2016 YulianMobile. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  TransparentNavigationController.swift
 //  Partnr
 //
-//  Created by Yosemite on 1/23/16.
+//  Created by Yulian Simeonov on 1/23/16.
 //  Copyright © 2016 YulianMobile. All rights reserved.
 //
 

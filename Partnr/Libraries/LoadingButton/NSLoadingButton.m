@@ -2,8 +2,8 @@
 //  NSLoadingButton.m
 //  NimbleSchedule
 //
-//  Created by Yosemite on 10/19/15.
-//  Copyright © 2015 YuriiBogdan. All rights reserved.
+//  Created by Yulian Simeonov on 10/19/15.
+//  Copyright © 2015 YulianMobile. All rights reserved.
 //
 
 #import "NSLoadingButton.h"

@@ -2,7 +2,7 @@
 //  UserListViewController.swift
 //  Partnr
 //
-//  Created by Yosemite on 2/16/16.
+//  Created by Yulian Simeonov on 2/16/16.
 //  Copyright © 2016 YulianMobile. All rights reserved.
 //
 

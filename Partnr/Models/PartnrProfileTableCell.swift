@@ -2,7 +2,7 @@
 //  PartnrProfileTableCell.swift
 //  Partnr
 //
-//  Created by Yosemite on 4/17/16.
+//  Created by Yulian Simeonov on 4/17/16.
 //  Copyright © 2016 YulianMobile. All rights reserved.
 //
 
